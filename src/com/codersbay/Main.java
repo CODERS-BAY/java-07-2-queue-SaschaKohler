@@ -6,9 +6,17 @@ public class Main {
 
         Queue intQueue = new Queue();
 
+        try {
+            intQueue.dequeue();
+        } catch(Exception e){
+            System.out.println(e);
+        }
+
         intQueue.enqueue(1);
         intQueue.enqueue(2);
         intQueue.enqueue(3);
+
+
 
         System.out.println(intQueue.getSize());
         System.out.println(intQueue.dequeue());

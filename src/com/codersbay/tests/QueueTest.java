@@ -27,8 +27,7 @@ class QueueTest {
     void dequeueFirstInFirstOut() throws Exception {
         integerQueue.enqueue(10);   //first In
         integerQueue.enqueue(8);
-
-        assertArrayEquals(new int[]{10, 8},integerQueue.dequeue(10)); //first Out
+        assertArrayEquals(new int[]{10, 8},integerQueue.dequeue(2)); //first Out
     }
 
     @Test

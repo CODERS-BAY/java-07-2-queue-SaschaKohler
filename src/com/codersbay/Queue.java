@@ -51,7 +51,7 @@ public class Queue {
             return oldFirst.data;
 
         } catch(Exception e){
-            throw new IllegalArgumentException("Fun");
+            throw new QueueTooSmallException("Ich bin hier Du nicht");
         }
     }
 
@@ -70,11 +70,8 @@ public class Queue {
 
 
     public int getSize(){
-        return this.getCounter();
-    }
-
-    private int getCounter() {
         return this.counter;
     }
+
 
 }
